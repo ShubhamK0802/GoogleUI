@@ -1,34 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <link rel="icon" href="imgs/icon.jpg">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="script.js"></script>
+    <link rel="icon" href="./images/favicon.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <nav>
-        <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
-        <a href="https://www.google.co.in/imghp?hl=en&ogbl">Images</a>
-        <img src="imgs/g-menu.png">
-        <button>Sign in</button>
-    </nav>
-    <section class="section-1">
-        <img src="imgs/logo.png" class="logo">
-        <form><br><br>
-            <div class="s-box">
-                <img src="imgs/search.svg" class="search-icon">
-                <input type="text" class="s-input">
-                <img src="imgs/vs.png" class="vs-icon">
-                <input type="submit" class="s-btn" value="Google Search">
-                <input type="submit" class="s-btn" value="I'm Feeling Lucky">
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a class="link" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
+                </li>
+                <li>
+                    <a class="link" href="https://www.google.co.in/imghp?hl=en&ogbl">Images</a>
+                </li>
+                <li>
+                    <div class="circle-shadow">
+                        <a class="menu-icon" href=""><i class="fas fa-bars"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="circle-shadow">
+                        <a class="user-icon" href=""><span>S</span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <img class="logo-img" src="./images/logo.jpg" alt="Google Logo Image">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input id="search-input" class="search-input" type="text">
+                <i class="fas fa-keyboard"></i>
+                <i class="fas fa-microphone"></i>
             </div>
-        </form>
-        <div class="lang">
+            <div class="search-btns">
+                <button class="google-search-btn">Google Search</button>
+                <button class="lucky-search-btn">I'm Feeling Lucky</button>
+            </div>
+             <div class="lang">
             Google offered in:
             <a href="">हिन्दी </a>
             <a href="">বাংলা</a>
@@ -40,23 +62,42 @@
             <a href="">മലയാളം</a>
             <a href="">ਪੰਜਾਬੀ</a>
         </div>
+        </div>
     </section>
+
+    <!-- Footer -->
     <footer>
-        <h4>India</h4>
-        <div class="links">
-            <div class="link-1">
-                <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
-                <a href="https://rb.gy/j1gcy">Advertising</a>
-                <a href="https://www.google.com/intl/en_in/business/">Business</a>
-                <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
-            </div>
-            <div class="link-2">
-                <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
-                <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
-                <a href="#">Settings</a>
-            </div>
+        <div class="footer-content upper-footer">
+            <p>India</p>
+        </div>
+        <div class="footer-content lower-footer">
+            <ul class="lower-left-footer">
+                <li>
+                    <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                </li>
+                <li>
+                    <a href="https://rb.gy/j1gcy">Advertising</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/intl/en_in/business/">Business</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
+                </li>
+            </ul>
+            <ul class="lower-right-footer">
+                <li>
+                    <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
+                </li>
+                <li>
+                    <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
+                </li>
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+            </ul>
         </div>
     </footer>
-
 </body>
+
 </html>
